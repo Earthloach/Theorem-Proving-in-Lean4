@@ -1,0 +1,10 @@
+name = "lean_theorem_proving"
+version = "0.1.0"
+defaultTargets = ["lean_theorem_proving"]
+
+[[lean_lib]]
+name = "LeanTheoremProving"
+
+[[lean_exe]]
+name = "lean_theorem_proving"
+root = "Main"
