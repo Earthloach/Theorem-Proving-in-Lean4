@@ -1,1 +1,1 @@
-# lean_theorem_proving
+# My solutions for Theorem Proving in Lean4 exercises 
