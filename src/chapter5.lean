@@ -2,6 +2,10 @@ example (p q r : Prop) (hp : p)
         : (p ∨ q ∨ r) ∧ (q ∨ p ∨ r) ∧ (q ∨ r ∨ p) := by
   simp [hp]
 
+example (p q r : Prop) (hp : p) : (p ∨ q ∨ r) ∧ (q ∨ p ∨ r) ∧ (q ∨ r ∨ p) := by
+  constructor; left; assumption; constructor; right; left; assumption; right; right; assumption
+
+
 open Classical
 
 variable (α : Type) (p q : α → Prop)
