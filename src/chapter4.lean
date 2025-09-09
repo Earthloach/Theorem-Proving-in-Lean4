@@ -149,7 +149,7 @@ example (h : ∀ x : men, shaves barber x ↔ ¬ shaves x x) : False :=
 
 def even (n : Nat) : Prop := ∃ b, n = 2 * b
 
-def prime (n : Nat) : Prop := ∃ b, even b ∧ n = b + 1
+def prime (n : Nat) : Prop := n > 1 ∧ ∀ m, m ∣ n → m = 1 ∨ m = n
 
 def infinitely_many_primes : Prop := ∀ b, ∃ c, prime c ∧ c > b
 
