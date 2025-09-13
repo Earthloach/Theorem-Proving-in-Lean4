@@ -234,7 +234,6 @@ inductive Expr where
   | times (s t : Expr) : Expr
 
 namespace Expr
-
 def eval (e : Expr) (assign : Nat → Nat) : Nat :=
   match e with
   | const n => n
